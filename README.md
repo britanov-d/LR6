@@ -29,3 +29,69 @@ _Цель лабораторной работы_: изучение базовы�
 С помощью _git revert HEAD --no-edit_ осуществлен откат коммита (_см. [рис. 12](https://github.com/britanov-d/LR6/blob/Report/screenshots/12.png)_).
 
 # Лог команд
+
+git config --global user.name "4315 Британов Д.И."
+
+git config --global user.email "hamiltonbax9@gmail.com"
+
+git clone https://github.com/britanov-d/LR6
+
+cd LR6
+
+ls -1
+
+git pull
+
+ls -1
+
+git reflog
+
+git log
+
+git checkout new_file
+
+ls -1
+
+git checkout master
+
+ls -1
+
+git merge new_file
+
+ls -1
+
+git branch -d new_file
+
+echo "три икс в кубе плюс константа" >> first_file
+
+git status
+
+git add first_file
+
+git commit -m "Добавление первого файл"
+
+git push
+
+echo "гоооооол" >> second_file.txt
+
+git status
+
+git add second_file.txt
+
+git commit -m "Добавление второго файла"
+
+git push
+
+echo "какой гоооооол, мы лабу делаем" >> third_file
+
+git status
+
+git add third_file
+
+git status
+
+git commit -m "Создание третьего файла"
+
+git push
+
+git revert HEAD --no-edit
